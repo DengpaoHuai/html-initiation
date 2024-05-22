@@ -12,7 +12,16 @@ h2 {
   text-align: center;
 }
 
-input {
+h4 {
+  font-size: 22px;
+  color: #2d2d2d;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 15px;
+}
+
+input,
+textarea {
   border-radius: 4px;
   border: 1px solid #e0e3eb;
   padding-left: 10px;
@@ -22,5 +31,14 @@ input {
 }
 
 label {
-  color: grey;
+  color: rgb(142, 142, 142);
+}
+
+button {
+  background-color: #2947a9;
+  color: #fff;
+  border: 0px;
+  padding: 8px 30px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
 }
