@@ -1,0 +1,19 @@
+#monBody {
+  background-color: olive;
+}
+
+h2 {
+  background-color: brown;
+}
+
+#app {
+  background-color: aqua;
+}
+
+.livre {
+  width: 50%;
+}
+
+body {
+  background-color: rgb(63, 63, 24);
+}
