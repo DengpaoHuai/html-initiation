@@ -85,61 +85,28 @@
     </section>
 
     <section>
-      <h2>Contact</h2>
+      <h2>Formulaire de contact</h2>
       <form
         action="file:///C:/Users/pierr/Documents/cours/html_css_course/index.html"
       >
         <div>
-          <label for="email">Votre email</label>
-          <input name="email" id="email" type="email" required minlength="4" />
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" />
         </div>
         <div>
-          <label for="valuel">Votre message</label>
-          <input id="valuel" type="radio" name="demo" value="valuel" />
-          <label for="value2">Votre message</label>
-          <input id="value2" type="radio" name="demo" value="value2" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
         </div>
         <div>
-          <label for="checkbox1">Votre message</label>
-          <input
-            type="checkbox"
-            name="democheckbox"
-            value="valuel"
-            id="checkbox1"
-          />
-          <label for="checkbox2">Votre message</label>
-          <input
-            type="checkbox"
-            name="democheckbox"
-            value="value2"
-            id="checkbox2"
-          />
-          <label for="checkbox3">Votre message</label>
-          <input
-            type="checkbox"
-            name="democheckbox"
-            value="value3"
-            id="checkbox3"
-          />
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" />
         </div>
-        <div><input type="file" /></div>
         <div>
-          <label for="message">Votre message</label>
-          <textarea name="message" id="message"></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
         </div>
-        <fieldset>
-          <legend>Choose your favorite monster</legend>
 
-          <input type="radio" id="kraken" name="monster" value="K" />
-          <label for="kraken">Kraken</label><br />
-
-          <input type="radio" id="sasquatch" name="monster" value="S" />
-          <label for="sasquatch">Sasquatch</label><br />
-
-          <input type="radio" id="mothman" name="monster" value="M" />
-          <label for="mothman">Mothman</label>
-        </fieldset>
-        <button type="submit">envoyer</button>
+        <button type="submit">Envoyer</button>
       </form>
     </section>
   </body>
