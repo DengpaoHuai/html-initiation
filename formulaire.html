@@ -3,38 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="formulaire.css" />
+
     <title>Document</title>
   </head>
   <body id="monBody">
-    <section>
+    <section id="contact">
       <h2>Comment peut-on vous aider ?</h2>
       <h4>Besoin d’aide ? Envoyez un message !</h4>
-      <form class="form-contact-container">
+      <form id="form-contact-container">
         <div class="row-form-container row-form">
           <div>
-            <label for="name">Nom<span class="span-label">*</span></label>
+            <label for="name">Nom <span class="span-label">*</span></label>
             <input type="text" id="name" name="name" />
           </div>
           <div>
-            <label for="email">Email</label>
+            <label for="email">Email <span class="span-label">*</span></label>
             <input type="email" id="email" name="email" />
           </div>
         </div>
 
         <div class="row-form">
           <div>
-            <label for="phone">Téléphone</label>
+            <label for="phone"
+              >Téléphone <span class="span-label">*</span></label
+            >
             <input type="tel" id="phone" name="phone" />
           </div>
         </div>
 
         <div class="row-form">
-          <label for="message">Message</label>
+          <label for="message">Message <span class="span-label">*</span></label>
           <textarea id="message" name="message"></textarea>
         </div>
 
+        <div class="row-form helper-form-text">
+          <p><span>*</span> Cela indique un champs obligatoire</p>
+        </div>
         <button type="submit">Envoyer</button>
       </form>
     </section>
