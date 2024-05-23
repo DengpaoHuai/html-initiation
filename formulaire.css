@@ -44,6 +44,7 @@ button {
   color: #fff;
   border: 0px;
   padding: 8px 60px;
+  cursor: pointer;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
   margin-top: 25px;
@@ -152,6 +153,61 @@ button {
   padding: 50px;
 }
 
+footer {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-line {
+  display: flex;
+  width: 385px;
+}
+.info-line p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.info-line h5,
+.newsletter-part h5 {
+  width: 105px;
+  font-family: "Work Sans", sans-serif;
+  color: #2947a9;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#newsletter-form input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #e0e3eb;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#newsletter-form button {
+  margin: 0px;
+  margin-left: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #f9995d;
+}
+#newsletter-form {
+  display: flex;
+}
+
+.newsletter-part > div {
+  width: 325px;
+  margin-top: 20px;
+}
+
 @media (max-width: 450px) {
   .row-form-container {
     flex-direction: column;
@@ -169,5 +225,21 @@ button {
   }
   #hero_header h1 {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+  }
+  footer section {
+    width: 100%;
+  }
+
+  .info-line {
+    width: 80%;
+  }
+  .newsletter-part > div {
+    width: 80%;
   }
 }
