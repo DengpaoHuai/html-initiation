@@ -109,3 +109,28 @@ button {
   background-position: center;
   background-size: cover;
 }
+
+#book_section {
+}
+
+.red_block {
+  width: 300px;
+  background-color: red;
+  line-height: 0;
+}
+.red_block img {
+  width: 300px;
+  height: 300px;
+}
+
+.content_card {
+  background-color: #2947a9;
+  line-height: 1;
+  padding: 10px;
+}
+
+.content_card h3,
+.content_card p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
