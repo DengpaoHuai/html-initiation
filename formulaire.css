@@ -5,12 +5,18 @@ input {
   display: block;
 }
 
-#contact h2 {
+#contact h2,
+#book_section h2 {
   font-weight: 800;
   font-size: 36px;
   font-family: monospace;
   text-align: center;
   font-family: "Work Sans", sans-serif;
+}
+
+#book_section h2 {
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 #contact h4 {
@@ -133,4 +139,35 @@ button {
 .content_card p {
   color: #fff;
   font-family: "Work Sans", sans-serif;
+}
+
+.books_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#book_section {
+  padding: 50px;
+}
+
+@media (max-width: 450px) {
+  .row-form-container {
+    flex-direction: column;
+  }
+  .row-form {
+    width: 80%;
+  }
+
+  .row-form input {
+    width: calc(100% - 22px);
+  }
+
+  #form-contact-container textarea {
+    width: calc(100%);
+  }
+  #hero_header h1 {
+    font-size: 25px;
+  }
 }
