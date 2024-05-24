@@ -6,7 +6,8 @@ input {
 }
 
 #contact h2,
-#book_section h2 {
+#book_section h2,
+#why_us h2 {
   font-weight: 800;
   font-size: 36px;
   font-family: monospace;
@@ -316,6 +317,9 @@ footer section {
   background-color: #c3c4c4;
   animation: customTranslate 2s infinite;
   animation-duration: 4s;
+}
+#demo {
+  display: none;
 }
 
 @keyframes customTranslate {
