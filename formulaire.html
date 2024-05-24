@@ -21,7 +21,7 @@
     <title>Document</title>
   </head>
   <body id="monBody">
-    <header>
+    <header class="default_header">
       <div class="logo_container">
         <img src="linkedin.png" />
       </div>
@@ -42,6 +42,21 @@
         </nav>
       </div>
     </header>
+
+    <section id="side_menu">
+      <div>
+        <h3>
+          <a href="#book_section">Nos livres</a>
+        </h3>
+        <h3>
+          <a href="#contact">Contact</a>
+        </h3>
+        <h3>
+          <a href="#footer">Footer</a>
+        </h3>
+      </div>
+    </section>
+
     <section id="hero_header">
       <h1>
         La meilleure <br />
@@ -172,7 +187,7 @@
         <source src="videoplayback.mp4" />
         Vidéo pas dispo
       </video>
-      <iframe
+      <!--   <iframe
         width="560"
         height="315"
         src="https://www.youtube.com/embed/08tUnpzESZI?si=xUdsKAIg5Or5_0pi"
@@ -221,7 +236,7 @@
           from <a href="https://vimeo.com/blenderstudio">Blender Studio</a> on
           <a href="https://vimeo.com">Vimeo</a>.
         </p>
-      </div>
+      </div>-->
     </section>
     <section id="contact">
       <h2>Comment peut-on vous aider ?</h2>
@@ -307,7 +322,7 @@
     </footer>
 
     <div></div>
-
+    <script src="form.js"></script>
     <script>
       const form = document.getElementById("newsletter-form");
       console.log(form);

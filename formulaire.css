@@ -239,9 +239,6 @@ footer section {
   #burger {
     display: block;
   }
-  #burger:hover:after {
-    content: "mon menu";
-  }
 }
 
 @media (max-width: 800px) {
@@ -359,4 +356,80 @@ footer section {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes displayHeader {
+  from {
+    min-height: 0px;
+  }
+  to {
+    min-height: 100px;
+  }
+}
+
+@keyframes hideHeader {
+  from {
+    min-height: 100px;
+  }
+  to {
+    min-height: 0px;
+  }
+}
+
+.display_header {
+  animation: displayHeader 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.hide_header {
+  animation: hideHeader 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.default_header {
+  min-height: 100px;
+}
+
+#side_menu {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.117);
+  z-index: 999;
+  display: none;
+}
+
+#side_menu > div {
+  background-color: #fff;
+  height: 100vh;
+  width: 30vw;
+  transform: translateX(-30vw);
+}
+
+.display_menu {
+  animation: displayMenu 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes displayMenu {
+  from {
+    transform: translateX(-30vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes hideMenu {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-30vw);
+  }
+}
+
+.hide_menu {
+  animation: hideMenu 1s linear;
+  animation-fill-mode: forwards;
 }
