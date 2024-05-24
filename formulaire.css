@@ -192,6 +192,12 @@ footer section {
   padding-left: 10px;
   padding-right: 10px;
 }
+#form-contact-container input:focus-visible,
+#form-contact-container textarea:focus-visible,
+#form-contact-container input:focus {
+  border: 1px solid #c3c4c4;
+  outline: none;
+}
 #newsletter-form button {
   margin: 0px;
   margin-left: 10px;
@@ -208,6 +214,42 @@ footer section {
   margin-top: 20px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo_container {
+  margin-left: 20px;
+}
+
+.nav_container {
+  margin-right: 20px;
+  align-self: center;
+}
+
+.nav_container nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav_container li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+}
+.nav_container li a:hover {
+  color: #2947a9;
+}
+#burger {
+  display: none;
+}
 @media (max-width: 450px) {
   .row-form-container {
     flex-direction: column;
@@ -225,6 +267,15 @@ footer section {
   }
   #hero_header h1 {
     font-size: 25px;
+  }
+  .nav_container nav ul {
+    display: none;
+  }
+  #burger {
+    display: block;
+  }
+  #burger:hover:after {
+    content: "mon menu";
   }
 }
 
