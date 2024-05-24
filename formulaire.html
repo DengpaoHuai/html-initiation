@@ -11,6 +11,7 @@
     />
 
     <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
     <link rel="stylesheet" type="text/css" href="formulaire.css" />
 
     <title>Document</title>
@@ -43,13 +44,30 @@
         bibliothèque
       </h1>
     </section>
+
+    <section id="demo">
+      <div class="scene">
+        <div class="carousel">
+          <div class="carousel__cell">1</div>
+          <div class="carousel__cell">2</div>
+          <div class="carousel__cell">3</div>
+          <div class="carousel__cell">4</div>
+          <div class="carousel__cell">5</div>
+          <div class="carousel__cell">6</div>
+          <div class="carousel__cell">7</div>
+          <div class="carousel__cell">8</div>
+          <div class="carousel__cell">9</div>
+        </div>
+      </div>
+
+      <div id="animate"></div>
+    </section>
+
     <section id="book_section">
       <h2>Nos livres récents :</h2>
       <div class="books_container">
         <div class="red_block">
-          <img
-            src="file:///C:/Users/pierr/Documents/cours/html_css_course/livre.jpg"
-          />
+          <img src="fond.png" />
           <div class="content_card">
             <h3>1984</h3>
             <p>Georges Orwell</p>
@@ -163,7 +181,8 @@
           <h5>Newsletter</h5>
           <form id="newsletter-form">
             <input type="email" placeholder="Votre email" />
-            <button type="submit">S'inscrire</button>
+            <button id="submit" type="submit">S'inscrire</button>
+            <div id="loader"></div>
           </form>
         </div>
 
@@ -185,5 +204,27 @@
     </footer>
 
     <div></div>
+
+    <script>
+      const form = document.getElementById("newsletter-form");
+      console.log(form);
+      const loader = document.getElementById("loader");
+      loader.style.display = "none";
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const button = document.getElementById("submit");
+        button.style.display = "none";
+        loader.style.display = "block";
+        sleep(2000).then(() => {
+          loader.style.display = "none";
+          button.style.display = "block";
+        });
+      });
+
+      const sleep = async (ms) => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      };
+    </script>
   </body>
 </html>

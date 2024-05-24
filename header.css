@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo_container {
+  margin-left: 20px;
+}
+
+.nav_container {
+  margin-right: 20px;
+  align-self: center;
+}
+
+.nav_container nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav_container li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+}
+.nav_container li a:hover {
+  color: #2947a9;
+}
+#burger {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .nav_container nav ul {
+    display: none;
+  }
+  #burger {
+    display: block;
+  }
+  #burger:hover:after {
+    content: "mon menu";
+  }
+}
